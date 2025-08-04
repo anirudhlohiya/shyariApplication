@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">shyariApplicationByAnirudhLohiya</string>
+    <string name="app_name_without_space">Shayari App By Anirudh Lohiya</string>
+    <string name="header_app_name">SHYARI APP</string>
+    <string name="msg_token_fmt">Token: %s</string>
+</resources>
