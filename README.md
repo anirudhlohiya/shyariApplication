@@ -3,7 +3,7 @@
 Welcome to the Shayari App — your go-to Android application for reading and enjoying beautiful Hindi Shayaries across various categories.
 
 📱 **Live on Google Play Store:**  
-[👉 Download Now](https://play.google.com/store/apps/details?id=your.package.name)
+[👉 Download Now](https://play.google.com/store/apps/details?id=com.hindi.shyariapplicationbyanirudhlohiya)
 
 ---
 
