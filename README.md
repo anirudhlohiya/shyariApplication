@@ -33,11 +33,25 @@ Welcome to the Shayari App — your go-to Android application for reading and en
 
 ## 🛠 Tech Stack
 
-- **Language:** Java / Kotlin (choose one based on your code)
-- **Database:** Firebase Realtime Database
-- **Authentication:** Firebase Auth
-- **UI:** Material Design, Jetpack Libraries
-- **Notification:** Firebase Cloud Messaging (if used)
+### Frontend (Android Application)
+- **Language:** Kotlin
+- **UI Framework:** Android SDK with Material Design Components
+- **UI Libraries:** 
+  - AndroidX AppCompat
+  - Material Components (com.google.android.material)
+  - ConstraintLayout
+  - ViewBinding
+- **RecyclerView:** For displaying lists of Shayari and Categories
+
+### Backend & Database
+- **Backend Service:** Firebase (Backend-as-a-Service)
+- **Database:** Firebase Firestore (NoSQL Cloud Database)
+- **Cloud Messaging:** Firebase Cloud Messaging (FCM) for push notifications
+
+### Build & Configuration
+- **Build System:** Gradle (Kotlin DSL)
+- **Minimum SDK:** API 24 (Android 7.0)
+- **Target SDK:** API 36
 
 ---
 
