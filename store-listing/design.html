@@ -1,0 +1,82 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Renders Play Store graphics. Open with ?v=icon|feature|s1|s2|s3 and screenshot at the matching size. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root{--ink:#0b1020;--navy:#141b33;--gold:#d9b46a;--gold2:#f3dca0;--gold3:#a9823d;--cream:#f5ead2}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{background:var(--ink);overflow:hidden}
+  .bg{position:absolute;inset:0;background:
+      radial-gradient(ellipse at 30% 20%,#25305a 0%,transparent 60%),
+      radial-gradient(ellipse at 80% 90%,#2a1f3d 0%,transparent 55%),
+      linear-gradient(160deg,#141b33,#0b1020)}
+  .goldtext{background:linear-gradient(180deg,var(--gold2),var(--gold) 55%,var(--gold3));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hi{font-family:'Tiro Devanagari Hindi',serif}
+  .en{font-family:'Cormorant Garamond',serif}
+  .sans{font-family:Inter,sans-serif}
+  .view{display:none;position:relative;overflow:hidden}
+
+  /* icon 512 */
+  #icon{width:512px;height:512px}
+  #icon .ring{position:absolute;inset:56px;border-radius:50%;border:3px solid rgba(217,180,106,.55);box-shadow:0 0 40px rgba(217,180,106,.15) inset}
+  #icon .ring2{position:absolute;inset:72px;border-radius:50%;border:1px solid rgba(217,180,106,.3)}
+  #icon .glyph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:250px;line-height:1;padding-top:40px}
+  #icon .quill{position:absolute;left:50%;bottom:96px;transform:translateX(-50%);width:120px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+
+  /* feature 1024x500 */
+  #feature{width:1024px;height:500px}
+  #feature .left{position:absolute;left:64px;top:0;bottom:0;width:560px;display:flex;flex-direction:column;justify-content:center}
+  #feature .kicker{font-size:26px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:600}
+  #feature h1{font-size:96px;line-height:1;font-weight:700;margin:6px 0 10px}
+  #feature .tag{font-size:40px;color:var(--cream);line-height:1.4}
+  #feature .rule{width:160px;height:2px;background:linear-gradient(90deg,var(--gold),transparent);margin:22px 0}
+  #feature .chips{display:flex;gap:10px;flex-wrap:wrap}
+  #feature .chip{border:1px solid rgba(217,180,106,.5);color:var(--gold2);padding:6px 16px;border-radius:999px;font-size:17px}
+  #feature .phone{position:absolute;right:70px;top:46px;width:236px;height:500px}
+
+  /* phone frame */
+  .phone{border-radius:34px;background:#05070f;padding:9px;box-shadow:0 0 0 2px rgba(217,180,106,.6),0 30px 80px rgba(0,0,0,.6)}
+  .phone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:26px;display:block}
+
+  /* screenshots 1080x1920 */
+  .shot{width:1080px;height:1920px}
+  .shot .cap{position:absolute;top:120px;left:0;right:0;text-align:center}
+  .shot .cap .en{font-size:96px;font-weight:700;line-height:1.05}
+  .shot .cap .hi{font-size:54px;color:var(--cream);margin-top:22px}
+  .shot .phone{position:absolute;left:50%;transform:translateX(-50%);top:520px;width:780px;height:1600px;border-radius:70px;padding:18px}
+  .shot .phone img{border-radius:54px}
+  .orn{color:var(--gold);opacity:.8;font-size:40px;letter-spacing:.4em}
+</style></head>
+<body>
+<div id="icon" class="view"><div class="bg"></div><div class="ring"></div><div class="ring2"></div>
+  <div class="glyph hi goldtext">श</div><div class="quill"></div></div>
+
+<div id="feature" class="view"><div class="bg"></div>
+  <div class="left">
+    <div class="kicker en">Hindi Shayari</div>
+    <h1 class="hi goldtext">शायरी</h1>
+    <div class="tag hi">हर एहसास के लिए, दिल से</div>
+    <div class="rule"></div>
+    <div class="chips sans"><span class="chip">Love</span><span class="chip">Sad</span><span class="chip">Dosti</span><span class="chip">Romantic</span><span class="chip">Attitude</span></div>
+  </div>
+  <div class="phone"><img src="home.jpg"></div>
+</div>
+
+<div id="s1" class="view shot"><div class="bg"></div>
+  <div class="cap"><div class="orn">❦</div><div class="en goldtext">Shayari for<br>every feeling</div><div class="hi">प्यार, दर्द, दोस्ती और भी बहुत कुछ</div></div>
+  <div class="phone"><img src="home.jpg"></div></div>
+
+<div id="s2" class="view shot"><div class="bg"></div>
+  <div class="cap"><div class="orn">❦</div><div class="en goldtext">Copy &amp; share<br>in one tap</div><div class="hi">अपनों तक पहुँचाइए दिल की बात</div></div>
+  <div class="phone"><img src="category.jpg"></div></div>
+
+<div id="s3" class="view shot"><div class="bg"></div>
+  <div class="cap"><div class="orn">❦</div><div class="en goldtext">Save your<br>favourites</div><div class="hi">पसंदीदा शायरी, हमेशा आपके पास</div></div>
+  <div class="phone"><img src="favorites.jpg"></div></div>
+
+<script>
+  const v=new URLSearchParams(location.search).get('v')||'icon';
+  document.getElementById(v).style.display='block';
+</script>
+</body></html>
